@@ -1,0 +1,6 @@
+.env
+gcp-key.json
+*.csv
+*.json
+
+.vscode/
