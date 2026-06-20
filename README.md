@@ -20,6 +20,7 @@
    * 確保資料庫不會產生重複資料，且支援歷史數據重跑 (Idempotent)。
    * 採用環境變數 (`.env`) 隔離雲端連線憑證，符合資安規範。
 
+```mermaid
 graph LR
     subgraph Source [原始資料 Data]
         A[orders.csv]
@@ -37,3 +38,4 @@ graph LR
 
     Source ==> Pipeline
     Pipeline ==> Target
+```
